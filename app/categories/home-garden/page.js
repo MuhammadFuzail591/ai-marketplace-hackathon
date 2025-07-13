@@ -393,7 +393,7 @@ export default function HomeAndGardenPage() {
                                 </div>
 
                                 {/* Product Cards */}
-                                <a className="group rounded-md overflow-hidden" href="#">
+                                <a className="group rounded-md overflow-hidden" href="/item">
                                     <img
                                         alt="3 Point Hitch Receiver 21x27 Tractor Receiver Hitch Drawbar 2 inch for Category 1"
                                         className="w-full object-cover"
