@@ -23,7 +23,7 @@ const SearchIcon = ({ className }) => (
 );
 
 // A simple SVG loading spinner component - it now accepts a className prop
-const LoadingSpinner = ({ className }) => (
+export const LoadingSpinner = ({ className }) => (
    <svg
       className={className}
       viewBox="0 0 24 24"

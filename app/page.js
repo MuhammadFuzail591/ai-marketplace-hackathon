@@ -182,7 +182,7 @@ export default function HomePage () {
       <main className='px-4 py-8 mx-auto max-w-7xl sm:px-6 lg:px-8'>
         <Link
           href={'/ai-search'}
-          className='flex justify-center w-[50%] p-4 mx-auto font-bold text-white bg-blue-500 rounded-lg'
+          className='flex justify-center w-[50%] p-4 mx-auto font-bold text-white bg-blue-500 rounded-lg mb-4'
         >
           AI Search
         </Link>
@@ -247,6 +247,13 @@ export default function HomePage () {
             ))}
           </ul>
         </section> */}
+
+        <Link
+          href={'/seller'}
+          className='flex justify-center w-[50%] p-4 mx-auto font-bold text-white bg-blue-500 rounded-lg mb-4'
+        >
+          AI for Seller
+        </Link>
       </main>
       <section className='relative px-6 py-12 overflow-hidden text-white bg-black sm:px-12 md:px-20 lg:px-28 xl:px-36'>
         {/* Text Content */}
