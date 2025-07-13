@@ -92,7 +92,7 @@ export default function ProductSearchPage() {
                AI Product Finder
             </h1>
             <p className="text-lg text-gray-600">
-               Describe what you're looking for, and let AI find it for you.
+               Describe what you are looking for, and let AI find it for you.
             </p>
          </header>
 
@@ -131,7 +131,7 @@ export default function ProductSearchPage() {
             {suggestions.length > 0 && (
                <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
                   {suggestions.map((product) => (
-                     <Link href={`/product/${product.title}`}>
+                     <Link href={`/product/${product.title}`} key={product.id}>
                         <div key={product.id} className="flex flex-col overflow-hidden transition-transform duration-300 bg-white shadow-lg rounded-xl hover:scale-105 hover:shadow-2xl">
                            <img
                               src={product.image}
