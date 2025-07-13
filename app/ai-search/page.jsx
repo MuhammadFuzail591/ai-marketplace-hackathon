@@ -3,10 +3,10 @@ import AISearch from '../components/AiSearch'
 
 function AISearchPage() {
    return (
-      <div>
+      <div className='m-10'>
          <AISearch />
       </div>
    )
 }
 
-export default pagAISearchPagee
+export default AISearchPage

@@ -180,8 +180,12 @@ export default function HomePage () {
 
       {/* Main Content */}
       <main className='px-4 py-8 mx-auto max-w-7xl sm:px-6 lg:px-8'>
-        {/* Hero Section */}
-        <AISearch />
+        <Link
+          href={'/ai-search'}
+          className='flex justify-center w-[50%] p-4 mx-auto font-bold text-white bg-blue-500 rounded-lg'
+        >
+          AI Search
+        </Link>
         <Categories />
 
         {/* Rare Finds Section */}

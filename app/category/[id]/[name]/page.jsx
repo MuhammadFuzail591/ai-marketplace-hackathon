@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import { useParams } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
+import ProductCard from '@/app/components/ProductCard';
 
 export default function CategoryPage() {
    const { id, name } = useParams();
@@ -96,41 +97,3 @@ export default function CategoryPage() {
       </div>
    );
 }
-
-const ProductCard = ({ product }) => {
-   return (
-      <Link
-         href={`/product/${product.id}`}
-         className="p-4 transition-shadow border rounded-lg hover:shadow-md"
-      >
-         <div className="relative w-full h-48 mb-4">
-            <Image
-               src={product.images?.[0]}
-               alt={product.title}
-               width={400}
-               height={400}
-               className='object-cover w-full h-full rounded-lg'
-            />
-         </div>
-         <h3 className="mb-1 text-sm font-semibold text-gray-800 truncate">
-            {product.title}
-         </h3>
-         <p className="text-lg font-semibold text-gray-600">${product.price}</p>
-      </Link>
-   );
-};
-
-{/* <div key={product.id} className='p-4 transition-shadow border rounded-lg hover:shadow-md'>
-                              <div className="relative w-full h-48 mb-4">
-                                 <Image
-                                    src={product.images?.[0]}
-                                    alt={product.title}
-                                    width={400}
-                                    height={400}
-                                    className='object-cover w-full h-full rounded-lg'
-                                 />
-                              </div>
-                              <h3 className='text-lg font-semibold text-gray-900'>{product.title}</h3>
-                              <p className='mt-1 text-sm text-gray-600 truncate'>{product.description}</p>
-                              <p className='mt-2 text-xl font-bold text-gray-900'>${product.price}</p>
-                           </div> */}

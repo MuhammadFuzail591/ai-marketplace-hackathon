@@ -1,15 +1,22 @@
-// app/product/[id]/page.tsx
+
 import { notFound } from 'next/navigation';
 
-async function getProduct(id) {
-   const res = await fetch(`https://api.escuelajs.co/api/v1/products/${id}`);
+export const viewport = {
+   width: 'device-width',
+   initialScale: 1,
+};
+
+
+async function getProduct(title) {
+   const res = await fetch(`https://api.escuelajs.co/api/v1/products/?title=${decodeURIComponent(title)}`);
    if (!res.ok) return null;
    return res.json();
 }
 
 export default async function ProductDetailsPage({ params }) {
-   const product = await getProduct(params.id);
+   const products = await getProduct(params.title);
 
+   const product = products?.[0];
    if (!product) return notFound();
 
    return (

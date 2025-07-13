@@ -6,7 +6,10 @@ const nextConfig = {
       'i.ebayimg.com',
       'i.imgur.com',
       'product.hstatic.net',
-      'placeimg.com'
+      'placeimg.com',
+      'vtcpay.vn',
+      'placehold.co',
+      'api.escuelajs.co'
     ]
   }
 }
